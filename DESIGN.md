@@ -48,6 +48,7 @@ resume/
 │  │  ├─ 2021-2025_solidigm_software_engineer.md
 │  │  ├─ 2017-2021_intel_software_engineer.md
 │  │  ├─ ...
+├─ work/                        # local, git-ignored private scratch (NEVER committed)
 ├─ templates/                   # pandoc/typst/latex templates (optional)
 ├─ assets/                      # images (e.g., logo/headshot)
 ├─ output/                      # built résumé artifacts
@@ -194,6 +195,13 @@ resume/
 - This repo is public:
   - Redact phone number and street address (keep city/region + LinkedIn).
   - Remove any internal project code names or confidential details.
+  - Use `work/` for temporary private notes/dumps; never commit or quote raw contents.
+
+### Private Working Notes
+
+- Create a local `work/` directory for temporary, potentially confidential inputs.
+- `work/` is git-ignored and excluded from CI. Treat as ephemeral; delete when no longer needed.
+- When extracting into `src/resume.md`, sanitize language and avoid internal names/metrics.
 
 ---
 

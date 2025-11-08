@@ -52,6 +52,15 @@ Agents **must never**:
 - `src/resume.md` is **publishable** and may be rewritten by agents.
 - `src/includes/` is **publishable** and may be referenced or edited.
 
+### Private Working Directory (never committed)
+
+- `work/` at the repository root is a local, git-ignored scratch area for temporary notes, raw dumps, or potentially confidential source material.
+- Agents may read documents in `work/` only to extract or summarize safe, public‑ready résumé content.
+- Agents must never:
+  - Copy or quote raw `work/` content verbatim into `src/` files or outputs.
+  - Commit, list, or otherwise expose filenames or contents from `work/`.
+  - Include confidential metrics, client names, internal code names, or unreleased data sourced from `work/`.
+
 ---
 
 ## Resume Output Guidelines
@@ -73,6 +82,7 @@ USER INPUTS:
 1. Target job description
 2. Current canonical résumé (`src/resume.md`)
 3. Optional contextual excerpts from `src/roles/` and `src/includes/`
+  - Optional private inputs: selected excerpts from `work/` (never quoted verbatim; sanitize and generalize)
 4. Constraints:
    - Keep ≤ 2 pages
    - Preserve factual accuracy
@@ -96,6 +106,7 @@ Before committing any AI-generated résumé to the repository:
 | ✅ No PII | No phone, address, or non-public email |
 | ✅ No confidential data | No client/internal project names or numbers |
 | ✅ Proper format | Markdown only, ≤ 2 pages |
+| ✅ No `work/` leakage | No raw quotes, filenames, or sensitive metrics from `work/` |
 | ✅ Professional tone | Neutral, factual, impact-focused |
 
 ---

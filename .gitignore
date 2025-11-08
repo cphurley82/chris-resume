@@ -328,6 +328,7 @@ TSWLatexianTemp*
 # Project-specific
 /output/
 /build/
+/work/
 *.aux
 *.out
 *.toc

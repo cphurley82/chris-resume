@@ -18,6 +18,7 @@ Resume managed as code: canonical Markdown, reusable includes, CI builds.
 - `src/resume.md` — canonical résumé (publishable)
 - `src/includes/` — reusable blocks (publishable)
 - `src/roles/` — detailed role dossiers (keep factual and non-confidential)
+- `work/` — local, git-ignored private scratch for temporary notes (NEVER committed)
 - `.github/workflows/build.yml` — CI to produce PDF/HTML artifacts
 
 ## Tailoring Workflow
@@ -29,3 +30,14 @@ Resume managed as code: canonical Markdown, reusable includes, CI builds.
 ## Privacy
 
 - Treat this repo as public: no phone number, street address, or confidential details.
+- Use `work/` for temporary private materials; do not copy raw content or sensitive metrics into `src/`.
+
+## Private Working Docs
+
+Create a local scratch area for confidential notes:
+
+```bash
+mkdir -p work
+```
+
+The `work/` directory is already listed in `.gitignore` and excluded from CI.
