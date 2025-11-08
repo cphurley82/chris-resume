@@ -57,7 +57,7 @@ Agents **must never**:
 ## Resume Output Guidelines
 
 1. **Always write concise, factual, truthful content.**
-2. **Never exceed one page** (≈550–650 words) for the main résumé.
+2. **Target two pages maximum** (≈900–1200 words) for the main résumé.
 3. **Tone:** Professional, direct, and outcome-driven — not self-promotional.
 4. **Formatting:** Semantic Markdown.
 5. **No hallucinated content.**
@@ -74,7 +74,7 @@ USER INPUTS:
 2. Current canonical résumé (`src/resume.md`)
 3. Optional contextual excerpts from `src/roles/` and `src/includes/`
 4. Constraints:
-   - Keep ≤ 1 page
+   - Keep ≤ 2 pages
    - Preserve factual accuracy
    - Do not introduce confidential details
    - Remove phone number and street address
@@ -95,7 +95,7 @@ Before committing any AI-generated résumé to the repository:
 |-------|----------------|
 | ✅ No PII | No phone, address, or non-public email |
 | ✅ No confidential data | No client/internal project names or numbers |
-| ✅ Proper format | Markdown only, ≤ 1 page |
+| ✅ Proper format | Markdown only, ≤ 2 pages |
 | ✅ Professional tone | Neutral, factual, impact-focused |
 
 ---

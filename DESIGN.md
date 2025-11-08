@@ -40,7 +40,7 @@ The repository provides:
 ```text
 resume/
 ├─ src/
-│  ├─ resume.md                 # canonical concise résumé (1 page)
+│  ├─ resume.md                 # canonical résumé (target ≤ 2 pages)
 │  ├─ includes/                 # reusable, publishable content blocks
 │  │  ├─ skills.md
 │  │  └─ projects.md
@@ -67,7 +67,7 @@ resume/
 ### 1. `src/resume.md`
 
 - The **canonical résumé**.  
-- Concise, one-page Markdown designed for human readability and ATS (Applicant Tracking System) parsing.
+- Concise, up to two pages of Markdown designed for human readability and ATS (Applicant Tracking System) parsing.
 - Maintains consistent formatting: `##` for section headings, `###` for roles, and bullet points (`-` or `*`) for accomplishments.
 - Does **not** include full project or role detail — only summary bullet points suitable for publication.
 
@@ -142,7 +142,7 @@ resume/
 
 - Defines LLM usage guidelines for résumé tailoring:
   - What files to read (`src/resume.md`, selected `src/roles/*`, and includes)
-  - Output constraints (≤ 1 page, quantifiable bullets, no PII)
+  - Output constraints (≤ 2 pages, quantifiable bullets, no PII)
   - Tone and formatting standards
   - Example prompt template and verification checklist
 
