@@ -5,13 +5,31 @@ Resume managed as code: canonical Markdown, reusable includes, CI builds.
 ## Quickstart
 
 - Edit `src/resume.md` (target ≤ 2 pages, semantic Markdown).
-- Build locally with Pandoc:
+- Build locally with Pandoc (requires Pandoc + XeLaTeX):
 
   ```bash
   mkdir -p output
-  pandoc src/resume.md -o output/resume.pdf
+  # Recommended PDF build: XeLaTeX + 1in margins + colored links
+  pandoc src/resume.md \
+    --pdf-engine=xelatex \
+    -V geometry:margin=1in \
+    -V colorlinks=true -V linkcolor=blue -V urlcolor=blue \
+    -o output/resume.pdf
+
+  # Also export HTML (standalone)
   pandoc src/resume.md -s -o output/resume.html
   ```
+
+### PDF export tips
+
+- Keep ≤ 2 pages by trimming content first (preferred), or slightly reduce margins if needed.
+- If text spills onto a third page, try:
+
+  ```bash
+  pandoc src/resume.md --pdf-engine=xelatex -V geometry:margin=0.9in -o output/resume.pdf
+  ```
+
+- Optional customization: add a Pandoc/LaTeX template under `templates/` and pass `--template` or font variables for a different look.
 
 ## Structure
 
