@@ -1,60 +1,81 @@
 # Christopher P. Hurley
 
-Email: cphurley82@gmail.com | LinkedIn: linkedin.com/in/cphurley82
+Email: [cphurley82@gmail.com](mailto:cphurley82@gmail.com)
+LinkedIn: [linkedin.com/in/cphurley82](https://www.linkedin.com/in/cphurley82)
 
 ## Summary
-Software engineer specializing in storage and memory systems. Builds SSD firmware and high‑fidelity media/models in C/C++ and SystemC with Python tooling. Strengths include simulation, CI integration, cross‑org collaboration, and pragmatic process improvement across modeling, validation, and early bring‑up. Comfortable navigating complex cross‑team interfaces to de‑risk schedules and improve developer velocity.
+
+Expert software engineer specializing in system-level development for SoC, storage, memory, and firmware. Proven strengths in CI/CD integration, cross-organizational collaboration, and pragmatic process improvement across modeling, validation, and hardware bring-up. Adept at navigating complex team interfaces to de-risk schedules and accelerate developer velocity.
 
 ## Skills
+
 - Languages: C++, C, Python, SystemVerilog, Verilog, JavaScript, Ruby
-- Modeling/HW: SystemC, TLM‑2.0, UVM, RTL/DPI integration
+- Hardware/Modeling: SystemC (TLM‑2.0), UVM, RTL/DPI integration
 - Storage/Embedded: SSD/NAND media, firmware, embedded systems
-- Tooling: CMake/CTest/CPack, Google Test, CI/CD, Git
+- Tools: CMake, GoogleTest, CI/CD, Git, clang‑format, clang‑tidy
 - Platforms: Linux, Windows, macOS; virtualization and containers
-- Practices: Agile/Scrum, code review, test‑driven development, documentation
+- Practices: Agile/Scrum, clean code, test‑driven development, documentation
 
 ## Experience
 
-### Solidigm — Software Engineer (07/2021–Present, Remote)
-- Develop firmware and media models for NAND SSDs in C/C++ with Python tooling.
-- Evaluated modeling landscapes across organizations; extended Solidigm media model to mimic partner device behavior and aligned on a unified long‑term strategy.
-- Onboarded partner firmware stack and simulation into Solidigm CI to expand coverage and accelerate feedback without additional capital expense.
-- Set up collaboration infrastructure and integrated SoC + NAND models for shift‑left development; achieved an early functional SSD demonstration ahead of schedule.
-- Implemented initial power‑on firmware for multiple projects spanning new NAND and SoC architectures.
-- Designed, debugged, and optimized a garbage‑collection algorithm for foggy‑fine programming using DRAM caching to meet performance targets.
-- Drove cross‑team alignment, clarified interfaces, and reduced friction between modeling, firmware, and validation stakeholders.
+### Qualcomm — Software Engineer (2025-04 – Present; Remote)
 
-### Intel — Software Engineer (03/2017–06/2021, Folsom, CA)
+- Led bring-up of a full SoC virtual platform and integrated it into CI, creating a documented workflow that accelerates new platform additions.
+- Built a SystemC unit test framework (GoogleTest + CMake) with parallel CI execution and quality gates.
+- Standardized code quality with clang-format, clang-tidy, and stricter compiler warnings, enforced via CI.
+- Implemented platform-aware register mapping in early boot flows (e.g., TF‑A to UEFI), stabilizing simulation boot.
+- Designed a scalable, router-based dynamic address decoder (TLM‑2.0), reducing lookup complexity for large address maps.
+- Automated Markdown-to-wiki publishing in CI to ensure virtualization and platform documentation remains current.
+- Contributed upstream improvements to SystemC component libraries for modern C++ (Clang/LLVM 17, C++20).
+
+### Solidigm — Software Engineer (2021-07 – 2025-03; Remote)
+
+- Developed NAND SSD firmware and media models in C/C++ with Python tooling.
+- Aligned and extended NAND media models to interoperate with partner stacks, shaping a unified modeling strategy.
+- Designed and deployed simulation-driven CI workflows, expanding test coverage and enabling early regression detection.
+- Integrated SoC and NAND models for shift-left development, enabling an ahead-of-schedule functional demo on a new SoC/NAND combination.
+- Implemented and optimized a QLC-focused garbage-collection algorithm with DRAM caching, improving I/O stability and performance.
+- Modernized simulation toolchains with compiler updates and reproducible builds to streamline developer workflows.
+- Established initial power-on firmware and bring-up infrastructure across multiple programs and form factors.
+- Facilitated cross-team alignment and clarified interfaces to reduce friction between modeling, firmware, and validation stakeholders.
+
+### Intel — Software Engineer (2017-03 – 2021-06; Folsom, CA)
+
 - Built C++ models for 3D XPoint and NAND with TLM‑2.0 and SystemC/SystemVerilog interfaces to support architecture, RTL, and firmware development.
-- Designed a unified NAND model core leveraged across RTL validation, emulation, QoS, and virtual platforms; integrated with SSD VP and QoS models.
-- Worked closely with architecture and design to model new NAND features enabling earlier firmware development and pre‑silicon feedback.
-- Enhanced 3DXPoint timing workflows by replacing manual spreadsheets with Python tooling and version‑controlled plaintext, enabling rapid what‑if analysis.
-- Architected a high‑performance multithreaded C++/SV‑DPI testbench for transactor validation.
-- Led planning, Scrum, process improvement, and DevOps initiatives; mentored new team members and provided code reviews to improve quality and velocity.
+- Designed a unified NAND model core leveraged across RTL validation, emulation, and virtual platforms, integrating it with SSD VP and QoS models.
+- Collaborated with architecture and design teams to model new NAND features, enabling earlier firmware development and pre-silicon feedback.
+- Enhanced 3D XPoint timing workflows by replacing manual spreadsheets with version-controlled Python tooling, enabling rapid what-if analysis.
+- Architected a high-performance, multithreaded C++/SV-DPI testbench for transactor validation.
+- Led team planning, Scrum processes, and DevOps initiatives; mentored new engineers and performed code reviews to improve quality and velocity.
 
-### Intel — Software Engineer (04/2014–07/2016, Folsom, CA)
-- Architected a SystemC/Python component testbench enabling high‑level testing through customer‑facing interfaces, reducing test times from minutes to seconds.
-- Added C++ unit testing (Google Test), reducing targeted test times from seconds to milliseconds.
-- Consolidated builds into a single cross‑platform CMake configuration with automated tests, linting, and packaging (CTest/CPack), cutting builds from ~5 minutes to ~30 seconds.
-- Unified multiple separately maintained models into one configurable core with role‑specific interfaces; coordinated parameters with design and architecture.
-- Drove adoption of Scrum with regular releases; ran daily stand‑ups, sprint planning, and customer sync meetings.
+### Oracle — Cloud Application Developer (2016-07 – 2017-03; Rocklin, CA)
 
-### Oracle — Cloud Application Developer (07/2016–03/2017, Rocklin, CA)
-- Migrated internal sales configuration from a legacy system to Oracle CPQ Cloud.
-- Built front end (JavaScript/HTML), back end (BML/SQL), and Python automation and testing.
-- Led a licensing product selection tool from requirements and architecture through UAT and go‑live.
-- Set up Jira for project management; authored process documentation and functional specifications.
+- Migrated an internal sales configuration system to Oracle CPQ Cloud.
+- Developed front-end (JavaScript/HTML), back-end (BML/SQL), and automation/testing scripts in Python.
+- Led a licensing product selection tool from requirements gathering through UAT and go-live.
+- Implemented Jira for project management and authored process documentation and functional specifications.
 
-### Intel — System Test Engineer (09/2009–03/2014, Folsom, CA)
-- Developed manufacturing test flows in C++ for SAS, Fibre Channel, and PCIe SSDs from initial development through high‑volume manufacturing.
-- Migrated from a hard‑to‑scale Windows PC setup to a custom, highly parallel Linux testing infrastructure.
-- Led joint development with tester vendors on new products and drive interfaces; increased code reuse and collaboration between product lines.
-- Set up Jira for issue management and Confluence for collaboration.
-- Partnered with firmware to debug manufacturing issues and create features to reduce test costs.
+### Intel — Software Engineer (2014-04 – 2016-07; Folsom, CA)
+
+- Architected a SystemC/Python component testbench that enabled high-level testing via customer-facing interfaces, reducing test times from minutes to seconds.
+- Integrated C++ unit testing (GoogleTest), reducing targeted test execution from seconds to milliseconds.
+- Consolidated builds into a single cross-platform CMake configuration with automated testing and packaging (CTest/CPack), cutting build times from ~5 minutes to ~30 seconds.
+- Unified multiple disparate models into one configurable core with role-specific interfaces, coordinating parameters with design and architecture.
+- Drove adoption of Scrum with regular release cycles; facilitated daily stand-ups, sprint planning, and customer syncs.
+
+### Intel — System Test Engineer (2009-09 – 2014-03; Folsom, CA)
+
+- Developed C++ manufacturing test flows for SAS, Fibre Channel, and PCIe SSDs from initial development through high-volume manufacturing.
+- Migrated test infrastructure from a limited Windows PC setup to a custom, highly parallel Linux-based system.
+- Led joint development with tester vendors on new products and drive interfaces, increasing code reuse and collaboration across product lines.
+- Established Jira for issue management and Confluence for team collaboration.
+- Partnered with firmware teams to debug manufacturing issues and implement features to reduce test costs.
 
 ### Earlier Experience
-- Intel — Design Engineering Intern (06/2008–08/2009): Assisted with RTL design, synthesis, verification, timing, and power. Developed curriculum for and taught SystemVerilog to engineers familiar with iHDL/VHDL.
-- UC Davis — Micromouse Robotics Team Lead (09/2008–06/2009): Led a 5‑person team; designed, fabricated, and programmed an autonomous maze‑solving robot; won the 2009 UC Davis Micromouse competition.
+
+- Intel — Design Engineering Intern (2008-06 – 2009-08): Assisted with RTL design, synthesis, verification, and timing. Developed and taught a SystemVerilog curriculum for engineers.
+- UC Davis — Micromouse Robotics Team Lead (2008-09 – 2009-06): Led a 5-person team to design, build, and program an autonomous maze-solving robot, winning the 2009 UC Davis Micromouse competition.
 
 ## Education
+
 B.S., Computer Engineering — University of California, Davis (2009)
