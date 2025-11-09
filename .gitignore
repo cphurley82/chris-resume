@@ -333,3 +333,6 @@ TSWLatexianTemp*
 *.out
 *.toc
 *.log
+
+# macOS system files
+.DS_Store
