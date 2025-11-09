@@ -16,6 +16,7 @@ Agents may:
 - Generate concise résumé variants, summaries, or formatting conversions (Markdown → PDF/HTML)
 - Provide editing suggestions aligned with job descriptions or target roles
 - Maintain tone, accuracy, and professional polish
+- Propose patch diffs or edited file content; do not run git unless explicitly authorized by the human
 
 Agents **must never**:
 
@@ -93,6 +94,7 @@ USER INPUTS:
 OUTPUT:
 - Tailored résumé in Markdown format
 - No extra commentary or non-Markdown text
+- No git/branch/commit operations
 ```
 
 ---
@@ -108,6 +110,7 @@ Before committing any AI-generated résumé to the repository:
 | ✅ Proper format | Markdown only, ≤ 2 pages |
 | ✅ No `work/` leakage | No raw quotes, filenames, or sensitive metrics from `work/` |
 | ✅ Professional tone | Neutral, factual, impact-focused |
+| ✅ No unauthorized VCS | No branch/commit/push/tag attempted |
 
 ---
 
@@ -119,20 +122,29 @@ Before committing any AI-generated résumé to the repository:
 
 ---
 
+## Operational Mode and VCS Policy
+
+- Default: advisory and file-scoped. Provide proposed changes as diffs or full file contents.
+- Do not create branches, commits, pushes, tags, or PRs unless explicitly requested by the human.
+- Never modify git settings, credentials, or remotes.
+
+---
+
 ## Revision Control
 
-- Any modification by an agent must occur in a **dedicated branch**:
+- Do not perform git operations unless explicitly instructed by the human.
+- If asked to make commits/branches, use a **dedicated branch**:
 
   ```text
   app/<company>-<role>
   ```
 
-- After review, changes may be merged or tagged with:
+- After review, tags may be created on request:
 
   ```text
   git tag YYYY-MM-<company>-<role>
   ```
   
-- Agents should not merge to `main` without human approval.
+- Never merge to `main` or push without explicit human approval.
 
 ---
